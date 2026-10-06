@@ -67,8 +67,15 @@ def scale_embeddings_by_sqrt_d_model(embeddings, d_model):
     # TODO: rescale embeddings by sqrt(d_model) as in the original Transformer paper
     return embeddings * math.sqrt(d_model)
 
-# Step 8 - compute_positional_div_term (not yet solved)
-# TODO: implement
+# Step 8 - compute_positional_div_term
+import torch
+import math
+
+def compute_positional_div_term(d_model):
+    # TODO: return a 1D FloatTensor of length d_model // 2 holding the sinusoidal frequency divisors
+    indices = torch.arange(0, d_model, 2, dtype=torch.float32)
+    div_term = torch.exp(indices * (-math.log(10000.0) / d_model))
+    return div_term
 
 # Step 9 - build_position_index_column (not yet solved)
 # TODO: implement
@@ -245,6 +252,9 @@ def scale_embeddings_by_sqrt_d_model(embeddings, d_model):
 # TODO: implement
 
 # Step 67 - apply_adam_bias_correction (not yet solved)
+# TODO: implement
+
+# Step 68 - compute_adam_parameter_update (not yet solved)
 # TODO: implement
 
 # Step 69 - apply_adam_step_to_all_parameters (not yet solved)

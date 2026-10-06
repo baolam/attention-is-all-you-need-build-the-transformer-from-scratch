@@ -17,7 +17,7 @@ python scaffold.py
 - [x] **5.** pad_id_sequence
 - [x] **6.** stack_padded_sequences_to_batch
 - [x] **7.** scale_embeddings_by_sqrt_d_model
-- [ ] **8.** compute_positional_div_term
+- [x] **8.** compute_positional_div_term
 - [ ] **9.** build_position_index_column
 - [ ] **10.** fill_even_indices_with_sin
 - [ ] **11.** fill_odd_indices_with_cos
@@ -77,6 +77,7 @@ python scaffold.py
 - [ ] **65.** update_adam_first_moment
 - [ ] **66.** update_adam_second_moment
 - [ ] **67.** apply_adam_bias_correction
+- [ ] **68.** compute_adam_parameter_update
 - [ ] **69.** apply_adam_step_to_all_parameters
 - [ ] **70.** zero_all_parameter_gradients
 - [ ] **71.** compute_batch_training_loss
